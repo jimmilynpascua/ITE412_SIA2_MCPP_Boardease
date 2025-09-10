@@ -12,7 +12,7 @@ With visual charts, landlords can quickly see tenant distribution and finances. 
 
 Repository usage notes (how to clone/run if applicable)
 
-Using HTTPS git clone: 
+Using HTTPS git clone: https://github.com/jimmilynpascua/ITE412_SIA2_MCPP_Boardease.git 
 Install Dependencies composer install
 Copy environment file cp.env.example.env
 Generate Application Key php artisan key:generate
