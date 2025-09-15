@@ -1,1 +1,34 @@
+1.Major Modules / Subsystems with Description
+a) Authentication and Security
+Handles secure login for landlords (via Laravel Breeze).
+Ensures that tenant and financial records are protected with encryption.
+b) House and Room Management
+Allows the landlord to add, update, and manage details of houses and rooms.
+Stores this data in the Room Records database.
+c) Tenant Management
+Records tenant information (profiles, contracts, etc.).
+Maintains the Tenant Records database for easy retrieval and updates.
+d) Payment Management
+Accepts and tracks payment details from tenants.
+Generates payment receipts for tenants.
+Stores transactions in the Payment Records database.
+Provides summaries and reports for landlords.
+e) Email Notifications Module
+Sends automated notifications to tenants for due/overdue payments.
+Stores a log of notifications in the Notification Logs database.
+f) Reports and Analytics
+Generates monthly, quarterly, and annual reports.
+Provides visual charts for tenant distribution and financial summaries.
 
+2. External Systems / Interfaces
+a) Landlord – Provides house and room info, manages tenants, views reports, and receives payment summaries.
+b) Tenant – Provides tenant details, submits payment details, and receives receipts & notifications.
+c) Google Email API – Used to send automated email notifications.
+d) Charts & Visualization API (e.g., Chart.js) – Used to create visual dashboards for reports.
+
+3. Data Flow Summary
+The flow of information within the BoardEase system begins when the landlord inputs house and room information, which is stored in the Room Records database.
+Tenants provide their details, which are stored in the Tenant Records database, and they also submit payment information, which is processed and saved in the Payment Records database.
+In return, tenants receive a payment receipt as confirmation. The system then generates payment summaries and detailed financial reports for landlords, covering monthly, quarterly, and annual periods.
+Additionally, payment details are sent to the Email Notifications module, which issues automated reminders to tenants about due or overdue balances via the Google Email API. 
+All notifications are stored in the Notification Logs database for tracking.
